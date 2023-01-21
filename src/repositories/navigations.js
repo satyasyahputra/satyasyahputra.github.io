@@ -1,0 +1,22 @@
+export default [
+    [
+        "mdi-home",
+        "Home",
+        "/home"
+    ],
+    [
+        "mdi-post",
+        "Posts",
+        "/posts"
+    ],
+    [
+        "mdi-file-account",
+        "Resume",
+        "/resume"
+    ],
+    [
+        "mdi-alert-octagon",
+        "Spam",
+        "/y"
+    ]
+]
