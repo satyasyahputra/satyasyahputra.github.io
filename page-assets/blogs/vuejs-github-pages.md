@@ -1,13 +1,14 @@
 # Deploy Vuejs into GitHub Pages
+---
 
-## Install vuejs
+## 1. Install vuejs
 Initialize vue project by this command:
 ```sh
 npm init vue@latest
 ```
 Then, fill the prompt of project data. You can fill project name as `vue-ss-github-pages.github.io` and you can select `no` for the rest.
 
-## Open Vue project and install deps
+## 2. Open Vue project and install deps
 
 ### Open Vue project directory
 ```sh
@@ -22,7 +23,7 @@ npm install
 npm run dev
 ```
 
-## Enable `gh-pages` on Vue project
+## 3. Enable `gh-pages` on Vue project
 
 ### Install `gh-pages`
 ```sh
@@ -43,7 +44,7 @@ Open `package.json` and add this following scipt:
 }
 ```
 
-## Add hompage in `package.json`
+## 4. Add homepage in `package.json`
 Open `package.json` and add homepage with value format `https://<github-account-username>.github.com/<repository>`
 
 ```json
@@ -52,15 +53,15 @@ Open `package.json` and add homepage with value format `https://<github-account-
 }
 ```
 
-## Set remote repository
+## 5. Set remote repository
 Create new repository in your GitHub account or if you already have any repository please add remote in your local Vue project.
 
-## Run deployment
+## 6. Run deployment
 ```sh
 npm run deploy
 ```
 
-## Setup GitHub Pages in repository
+## 7. Setup GitHub Pages in repository
 1. Open Settings
 2. Go to `Pages`
 3. On Build and Deployment > Branch, choose `gh-pages` and choose folder `/(root)`
@@ -108,5 +109,31 @@ If you want have both, you can run `npm run deploy:mac` or `npm run deploy:windo
 }
 ```
 
+## White page / Web not loaded
+This is happen due to builded vue plugin exporter have underscore (`_`) prefix name and github pages unable to load file. I recommend to not use lazy import in vue project to avoid vue build the vue plugin exporter and use common import.
+
+lazy import:
+```js
+const routes = [
+  {
+    path: '/',
+    redirect: { name: 'Home' },
+    component: () => import('@/components/Home.vue')
+  }
+]
+```
+
+Use this instead:
+```js
+import Home from '@/components/Home.vue';
+
+const routes = [
+  {
+    path: '/',
+    redirect: { name: 'Home' },
+    component: Home
+  }
+]
+```
 ---
 Done!

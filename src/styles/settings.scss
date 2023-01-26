@@ -15,3 +15,53 @@ body,
 #app {
     height: 100%;
 }
+
+#post-md-light {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        code {
+            color: #cf5809;
+        }
+
+        padding-top: 1em;
+    }
+
+    ol {
+        li {
+            code {
+                color: #cf5809;
+            }
+        }
+    }
+}
+
+#post-md-dark {
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        code {
+            color: #f08d49;
+        }
+
+        padding-top: 1em;
+    }
+
+    ol {
+        li {
+            code {
+                color: #f08d49;
+            }
+        }
+    }
+}

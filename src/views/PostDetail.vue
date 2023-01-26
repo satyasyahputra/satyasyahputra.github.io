@@ -2,7 +2,7 @@
     <v-container>
         <v-row justify="center">
             <v-col cols="12" md="8">
-                <div v-html="markdownToHtml"></div>
+                <div :id="isDark ? 'post-md-dark' : 'post-md-light'" v-html="markdownToHtml"></div>
             </v-col>
         </v-row>
     </v-container>
@@ -36,8 +36,12 @@ export default {
             return customMarked(this.rawGithubMarkdown);
         },
         ...mapState({
-            rawGithubMarkdown: 'rawGithubMarkdown'
+            rawGithubMarkdown: 'rawGithubMarkdown',
+            isDark: 'isDark'
         })
+    },
+    mounted() {
+
     }
 }
 
