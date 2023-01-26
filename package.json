@@ -1,0 +1,39 @@
+{
+  "name": "satyasyahputra.github.io",
+  "version": "0.0.2",
+  "private": true,
+  "homepage": "https://satyasyahputra.github.com/satyasyahputra.github.io",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "predeploy:windows": "npm run build && copy .\\dist\\index.html .\\dist\\404.html",
+    "deploy:windows": "gh-pages -d dist",
+    "predeploy:mac": "NODE_ENV=production npm run build && cp ./dist/index.html ./dist/404.html",
+    "deploy:mac": "NODE_ENV=production gh-pages -d dist"
+  },
+  "dependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@mdi/font": "7.0.96",
+    "axios": "^1.2.3",
+    "core-js": "^3.8.3",
+    "highlight.js": "^11.7.0",
+    "marked": "^4.2.12",
+    "roboto-fontface": "*",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.0",
+    "vuetify": "^3.0.0",
+    "vuex": "^4.0.2",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "gh-pages": "^5.0.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.9",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12"
+  }
+}

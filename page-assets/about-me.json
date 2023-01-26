@@ -1,0 +1,96 @@
+{
+    "personalIcons": [
+        [
+            "mdi-map-marker-radius",
+            "Purwokerto, Central Java, Indonesia",
+            null
+        ],
+        [
+            "mdi-gmail",
+            "a.satya.syahputra@gmail.com",
+            null
+        ],
+        [
+            "mdi-linkedin",
+            "https://id.linkedin.com/in/satya-syahputra",
+            "Satya Syahputra"
+        ],
+        [
+            "mdi-github",
+            "https://github.com/satyasyahputra",
+            "satyasyahputra"
+        ],
+        [
+            "mdi-gitlab",
+            "https://gitlab.com/satyasyahputra",
+            "satyasyahputra"
+        ]
+    ],
+    "programmingLanguages": [
+        "Elixir",
+        "Java",
+        "JavaScript"
+    ],
+    "skills": [
+        "Software Engineering (develop & test)",
+        "Scrum & Agile Methodologies",
+        "Problem Solving"
+    ],
+    "languages": [
+        "Bahasa",
+        "English"
+    ],
+    "workExperiences": [
+        {
+            "company": "GoTo Financial",
+            "role": "Product Engineer",
+            "startDate": "Sep 2019",
+            "endDate": "Present",
+            "texts": [
+                "Develop and maintain platform services in merchant platform based."
+            ],
+            "color": "cyan"
+        },
+        {
+            "company": "Gojek",
+            "role": "Product Engineer",
+            "startDate": "Sep 2019",
+            "endDate": "Present",
+            "texts": [
+                "Develop third-party integration as full-stack in merchant platform based."
+            ],
+            "color": "green"
+        },
+        {
+            "company": "Moka",
+            "role": "Software Engineer",
+            "startDate": "Sep 2019",
+            "endDate": "Jul 2021",
+            "texts": [
+                "Develop MokaFresh - B2B Food & Beverage marketplace as full-stack.",
+                "Develop third-party integration as full-stack."
+            ],
+            "color": "blue-darken-2"
+        },
+        {
+            "company": "Siloam Hospitals Group",
+            "role": "Software Engineer",
+            "startDate": "Mar 2019",
+            "endDate": "Aug 2019",
+            "texts": [
+                "Maintain MySiloam android app."
+            ],
+            "color": "blue-darken-4"
+        }
+    ],
+    "educations": [
+        {
+            "instance": "Universitas Atmajaya Yogyakarta",
+            "division": "Informatics Engineering",
+            "startDate": "Aug 2015",
+            "endDate": "Dec 2018",
+            "texts": [],
+            "color": "blue-darken-1"
+        }
+    ]
+}

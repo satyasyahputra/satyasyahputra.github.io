@@ -1,0 +1,16 @@
+[
+    [
+        "vuejs-github-pages",
+        "Deploy Vuejs into GitHub Pages",
+        "25 Jan 2023",
+        "https://raw.githubusercontent.com/satyasyahputra/satyasyahputra.github.io/master/page-assets/images/vuejs-github-pages.png",
+        "Build your Vuejs application and deploy to GitHub pages."
+    ],
+    [
+        "elixir-websocket",
+        "Build WebSocket server using Elixir",
+        "24 Jan 2023",
+        null,
+        "Build WebSocket server using Elixir by using Riverside library."
+    ]
+]
