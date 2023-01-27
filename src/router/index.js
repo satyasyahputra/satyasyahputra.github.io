@@ -7,6 +7,7 @@ import PostDetail from '@/views/PostDetail.vue';
 import About from '@/views/About.vue';
 import NotFound from '@/views/NotFound.vue';
 import Tutorials from '@/views/Tutorials.vue'
+import store from '@/stores';
 
 const routes = [
   {
@@ -23,7 +24,11 @@ const routes = [
         path: '/blogs/:id',
         name: 'PostDetail',
         component: PostDetail,
-        props: true
+        props: true,
+        beforeEnter: (_to, _from) => {
+          store.commit('setRawGithubMarkdown', "# Please wait \n---");
+          return true;
+        }
       },
       {
         path: '/blogs',

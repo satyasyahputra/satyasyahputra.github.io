@@ -95,6 +95,9 @@ const store = createStore({
                     state.homeContent = "";
                 })
         },
+        setRawGithubMarkdown(state, value) {
+            state.rawGithubMarkdown = value;
+        },
         setTheme(state, theme) {
             if (theme == 'dark') {
                 state.isDark = true;
