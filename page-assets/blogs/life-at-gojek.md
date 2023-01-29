@@ -9,4 +9,6 @@ After acquired by Gojek, I'm still working for Moka and collaborate with Gojek t
 
 Not long after acquired, there is a laid off announcement 😱 make me anxious. That is not funny, if I just join Gojek and laid off 😅. Fortunately, we from Moka is not included on laid off.
 
-Let's talk about culture, after has culture-shock experiences I'm feeling the culture in Gojek is good and might be fit with me. 
+Let's talk about culture, after has culture-shock experiences I'm feeling the culture in Gojek is good and gradually fit with me. First one, we have unlimited leave. Second one, how we handle day-to-day & sprint is mature enough and not strict, but have priority. Third one, everyone in team so supportive. Those are three key what I learn to have work-life balance, have better mind map to prioritize task, and how handle incident / any issues in staging & production.
+
+
