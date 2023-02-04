@@ -21,3 +21,7 @@ export const getGithubReadme = () => {
 export const getAboutme = () => {
     return axios.get(`${baseUrl}/page-assets/about-me.json`)
 }
+
+export const getMetadata = (name) => {
+    return axios.get(`${baseUrl}/page-assets/metadatas/${name}.json`)
+}

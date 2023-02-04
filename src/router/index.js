@@ -8,6 +8,7 @@ import About from '@/views/About.vue';
 import NotFound from '@/views/NotFound.vue';
 import Tutorials from '@/views/Tutorials.vue'
 import store from '@/stores';
+import { getMetadata } from '@/api';
 
 const routes = [
   {
@@ -25,8 +26,9 @@ const routes = [
         name: 'PostDetail',
         component: PostDetail,
         props: true,
-        beforeEnter: (_to, _from) => {
+        beforeEnter: (to, _from) => {
           store.commit('setRawGithubMarkdown', "# Please wait \n---");
+          console.log(to);
           return true;
         }
       },
