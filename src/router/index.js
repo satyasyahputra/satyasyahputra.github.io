@@ -26,9 +26,8 @@ const routes = [
         name: 'PostDetail',
         component: PostDetail,
         props: true,
-        beforeEnter: (to, _from) => {
+        beforeEnter: (_to, _from) => {
           store.commit('setRawGithubMarkdown', "# Please wait \n---");
-          console.log(to);
           return true;
         }
       },
